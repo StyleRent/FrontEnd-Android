@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.jeonju.stylerent.activities.OtherReviewActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/detail_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/greenbtn"
+            android:elevation="4dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="">
+
+            <ImageButton
+                android:id="@+id/imageButtonBack"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="start"
+                android:background="@null"
+                android:contentDescription="@string/back_button_description"
+                android:onClick="backButtonOnClick"
+                android:src="@drawable/ic_back_arrow" />
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textColor="@color/black"
+                android:text="My review list"
+                android:textSize="20sp" />
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!--        user list-->
+        <ListView
+            android:id="@+id/myReviewListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

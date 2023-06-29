@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="info.jeonju.stylerent.activities.ProfileEdit"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/greenbtn"
+            android:elevation="4dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="">
+
+
+            <ImageButton
+                android:id="@+id/ic_back_arrow"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="start"
+                android:background="@null"
+                android:contentDescription="@string/back_button_description"
+                android:onClick="backButtonOnClick"
+                android:src="@drawable/ic_back_arrow" />
+
+            <Button
+                android:id="@+id/savebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="1dp"
+                android:backgroundTint="@color/colorGray"
+                android:text="완료"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/colorGray" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="91dp"
+                android:layout_height="103dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="-37dp"
+                android:layout_marginBottom="35dp"
+                android:src="@drawable/ic_user" />
+
+            <!--            <de.hdodenhof.circleimageview.CircleImageView-->
+            <!--                android:id="@+id/userImage"-->
+            <!--                android:layout_width="91dp"-->
+            <!--                android:layout_height="103dp"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:layout_marginStart="16dp"-->
+            <!--                android:layout_marginTop="25dp"-->
+            <!--                android:layout_marginEnd="-37dp"-->
+            <!--                android:layout_marginBottom="35dp"-->
+            <!--                app:civ_border_width="2dp"-->
+            <!--                android:src="@drawable/ic_user" />-->
+
+            <!-- Camera Button -->
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginStart="-16dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="9dp"
+                android:backgroundTint="@color/gray"
+                android:clickable="true"
+                android:contentDescription="Take a photo with the camera"
+                android:scaleType="center"
+                android:src="@drawable/ic_camera"
+                app:fabCustomSize="33dp" />
+
+            <EditText
+                android:id="@+id/userNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:paddingLeft="15dp"
+                android:text="User Name"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="0dp"
+                android:background="@color/gray" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

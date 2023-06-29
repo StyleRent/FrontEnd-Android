@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraText">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
 
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
 
     <application
         android:allowBackup="true"
@@ -14,24 +23,80 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StyleRent"
-        tools:targetApi="31"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
         <activity
-            android:name=".RegisterActivity"
+            android:name="info.jeonju.stylerent.activities.OtherReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name="info.jeonju.stylerent.activities.ReviewListActivity"
+            android:exported="false" />
+        <activity
+            android:name="info.jeonju.stylerent.activities.SearchedListActivity"
+            android:exported="false" />
+        <activity
+            android:name="info.jeonju.stylerent.activities.ProductEditActivity"
+            android:exported="false" />
+        <activity
+            android:name="info.jeonju.stylerent.activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.jeonju.stylerent.activities.MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name="info.jeonju.stylerent.activities.Relative_user_profile"
+            android:exported="false" />
+        <activity
+            android:name="info.jeonju.stylerent.activities.MapActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="go5mmltxnw" />
+
+        <activity
+            android:name="info.jeonju.stylerent.activities.ProductDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="info.jeonju.stylerent.activities.NewProductActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
+            android:name="info.jeonju.stylerent.activities.ProfileEdit"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="info.jeonju.stylerent.activities.HomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="info.jeonju.stylerent.activities.RegisterActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="info.jeonju.stylerent.activities.MainActivity"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

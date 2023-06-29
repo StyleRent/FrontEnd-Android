@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/messageHistoryLayout"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/productImage"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_user" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Product name"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <Switch
+                android:id="@+id/switchRent"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_below="@id/toolbar"
+                android:layout_gravity="right"
+                android:paddingStart="5dp"
+                android:switchMinWidth="1dp"
+                android:textStyle="bold"
+                android:thumb="@drawable/switch_thumb"
+                android:track="@drawable/switch_track_selector" />
+
+            <TextView
+                android:id="@+id/productPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28.000"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/productEditBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_round"
+            android:text="수정" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/productDeleteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_round_red"
+            android:layout_marginStart="5dp"
+            android:text="삭제"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

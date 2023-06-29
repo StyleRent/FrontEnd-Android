@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="info.jeonju.stylerent.fragments.ChattingFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topnavbaruser"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/greenbtn"
+            android:elevation="4dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:title="My chats">
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+<!--        user list-->
+        <ListView
+            android:id="@+id/userListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myReviewListViewLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="8dp">
+
+
+
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_user" />
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textSize="20sp" />
+
+            <!--리뷰-->
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:progressBackgroundTint="@color/gray"
+                style="@android:style/Widget.DeviceDefault.Light.RatingBar.Small"
+                android:progressTint="@color/yellow"
+                android:clickable="false"
+                android:rating="5.0"
+                android:stepSize="0.4" />
+
+            <TextView
+                android:id="@+id/reviewTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contextClickable="true"
+                android:text="Review text"
+                android:textSize="18sp" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

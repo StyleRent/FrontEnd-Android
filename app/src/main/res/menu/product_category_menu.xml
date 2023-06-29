@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_top"
+        android:title="상의">
+    </item>
+    <item
+        android:id="@+id/menu_bottom"
+        android:title="하의">
+    </item>
+    <item
+        android:id="@+id/menu_shoes"
+        android:title="신발">
+    </item>
+    <item
+        android:id="@+id/menu_bag"
+        android:title="가방">
+    </item>
+    <item
+        android:id="@+id/menu_etc"
+        android:title="기타 등">
+    </item>
+</menu>

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RegisterActivity">
+    android:padding="16dp"
+    tools:context="info.jeonju.stylerent.activities.RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,7 +49,6 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-
             android:id="@+id/password_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -65,10 +65,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@color/purple_500"
             android:imeOptions="actionDone"
             android:text="register"
-            app:backgroundTint="@color/green"
+            app:backgroundTint="@color/greenbtn"
+            android:layout_marginBottom="6dp"
             android:textColor="@color/black" />
 
         <TextView

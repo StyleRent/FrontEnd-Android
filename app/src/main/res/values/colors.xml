@@ -8,6 +8,57 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#C6EBC5</color>
+    <color name="gray">#808080</color>
+    <color name="colorGray">#EEEEEE</color>
+    <color name="greenbtn">#AAC8A7</color>
+    <color name="deeppink">#DF7857</color>
+    <color name="orange">#FFA559</color>
+    <color name="pink">#FFABAB</color>
+    <color name="lightyellow">#FFFBAC</color>
+    <color name="yellow">#F7D060</color>
+    <color name="yellow2">#FFE15D</color>
+    <color name="green2">#ADE792</color>
+    <color name="basic">#F3ECB0</color>
+    <color name="blue2">#73A9AD</color>
+    <color name="pink2">#FFB4B4</color>
+    <color name="basic2">#FFD495</color>
+    <color name="orange2">#FAAB78</color>
+    <color name="green3">#D7E9B9</color>
+    <color name="green4">#68B984</color>
+    <color name="green5">#F0FF42</color>
+    <color name="green6">#5BB318</color>
+    <color name="green7">#EAE509</color>
+    <color name="blue3">#075898</color>
+    <color name="orange3">#EF5B0C</color>
+    <color name="green9">#3CCF4E</color>
+    <color name="green10">#F4FF61</color>
+    <color name="green11">#A8FF3E</color>
+    <color name="green12">#32FF6A</color>
+    <color name="green13">#27AA80</color>
+    <color name="green14">#2B580C</color>
+    <color name="green15">#AFA939</color>
+    <color name="orange4">#FDEF96</color>
+    <color name="blue4">#046582</color>
+    <color name="pink3">#F39189</color>
+    <color name="pink4">#BB8082</color>
+    <color name="blue5">#6E7582</color>
+    <color name="orange5">#F7B71D</color>
+    <color name="orange6">#E38B29</color>
+    <color name="orange7">#F1A661</color>
+    <color name="orange8">#FFD8A9</color>
+    <color name="orange9">#FDEEDC</color>
+    <color name="pink5">#F2B6A0</color>
+    <color name="pink6">#FFBFA9</color>
+    <color name="pink7">#FCE2DB</color>
+
+
+
+
+
+
+
+
+
 
 
 </resources>

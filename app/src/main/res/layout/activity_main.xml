@@ -10,12 +10,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo"/>
 
     <EditText
         android:id="@+id/email_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="text"
         android:layout_below="@+id/logo_image_view"
         android:layout_marginTop="16dp"
         android:hint="Email" />
@@ -36,9 +37,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/password_edit_text"
         android:layout_marginTop="16dp"
-        app:backgroundTint="@color/green"
+        app:backgroundTint="@color/greenbtn"
         android:textColor="@color/black"
-        android:text="Login" />
+        android:layout_marginBottom="16dp"
+        android:text="Login"/>
+
 
     <TextView
         android:id="@+id/registerTextview"
@@ -49,5 +52,6 @@
         android:layout_marginBottom="15dp"
         android:text="or Register new account"
         android:textColor="@color/black" />
+
 
 </RelativeLayout>
